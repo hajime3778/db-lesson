@@ -12,7 +12,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: rootPassword
-      MYSQL_DATABASE: photon
+      MYSQL_DATABASE: sample
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       TZ: Asia/Tokyo
