@@ -1,0 +1,87 @@
+-- CREATE TABLE users (
+--     id int NOT NULL AUTO_INCREMENT,
+--     name VARCHAR(20) NOT NULL,    
+--     email VARCHAR(50) NOT NULL,    
+--     password VARCHAR(20) NOT NULL,    
+--     created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+--     updated_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+-- ON
+--     UPDATE
+--         CURRENT_TIMESTAMP,
+--         PRIMARY KEY(id)
+-- ) ENGINE = InnoDB DEFAULT CHARSET = utf8
+-- ;
+
+-- INSERT INTO `users`(
+--     `name`,
+--     `email`,
+--     `password`
+-- )
+-- VALUES(
+--   '山田太朗',
+--   'taro_yamada@test.com',
+--   'yamadapass'
+-- ),(
+--   '田中誠',
+--   'makoto_tanaka@test.com',
+--   'tanakapass'
+-- ),(
+--   '鈴木一郎',
+--   'ichiro_suzuki@test.com',
+--   'suzukipass'
+-- )
+-- ;
+
+-- CREATE TABLE tweets(
+--     id int NOT NULL AUTO_INCREMENT,
+--     content VARCHAR(300) NOT NULL,   
+--     user_id int NOT NULL,
+--     created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+--     updated_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+-- ON
+--     UPDATE
+--         CURRENT_TIMESTAMP,
+--         PRIMARY KEY(id),
+--     	FOREIGN KEY (user_id) REFERENCES users (id)
+-- ) ENGINE = InnoDB DEFAULT CHARSET = utf8
+-- ;
+
+-- INSERT INTO `tweets`(
+--     `content`,
+--     `user_id`
+-- ) VALUES (
+--   '交通安全指導で保育園へおまわりさんが来た時、質問コーナーを設けてくれて「わるいひと つかまえる？」「パトカーはやい？」なんて子どもたちが聞くなか、男の子(4歳)がモジモジしながら「みかん すきですか…」と聞いた瞬間、おまわりさんが「可愛い…」と小声で言っていて「わかる…」ってなった。',
+--   1
+-- ),(
+--   '先日友人に「夫のどこが好き？」と聞かれて特にコレというアレはなく強いて言うなら深夜目が覚め１階で水飲んでたら後ろで微かな物音がして振り向かずに「いるんだろ？出て来いよ」って言ったら「さすがだな。人間界での暮らしが長くともかつての能力は健在という訳か」って返してきた所は嫌いじゃない',
+--   1
+-- ),(
+--   '電車に間に合いたい男子高生達が階段降りてったんだけど、1人靴脱げてうわーって叫んでて、先に行った子たちが「シンデレラァ！」「何やってんだシンデレラァ！！」「あばよシンデレラァ！！」って見捨ててて超面白かった',
+--   1
+-- ),(
+--   'なるべく怒鳴らないようにしよう、慌てない母ちゃんになろうと決意しました。考えた結果、スーパーで走り出す娘をムスカになりきって早歩きで追いかけながら、「どこへ行こうというのかね」って言うのがいちばんよかったです',
+--   2
+-- ),(
+--   'コンビニ前で男子高校生たちが「天皇さまさ、5月からマジでゆっくりしてほしい」「俺のじいちゃんは毎日クレープ買いに行ってるから、そんな感じで好きなモン食ってほしい」「天皇さま、何食べんのかな」「からあげクンとか食うのかな」「からあげクン美味しいから食べてほしいよな」と雑談している。',
+--   2
+-- ),(
+--   '前にも言ったかもだけど、うちの両親は挨拶だけはしっかりしなさいって子育てをしていたから、弟が反抗期のときは「いってきます…オイ！いってきますっつってんだろ！！」「いただきます…チッ、俺みたいな人間には『召し上がれ』もなしかよ…」って傍から見るとめっちゃ面白い切れ方をしていた',
+--   2
+-- ),(
+--   '知人の爺がクレカ入り財布を落とした→財布の中には暗証番号メモもいれてある
+--   →やばいじゃん！？
+--   →爺「問題ない。暗証番号は5つ記してある」
+--   →？
+--   →爺「そしてその全てはダミーだ」
+--   →！？
+--   →爺「ATMでそのダミー全て試すとロックされて銀行から俺に連絡がくる」
+--   →そして実際連絡きた',
+--   3
+-- ),(
+--   '米津玄師、レモンとパプリカで一生分稼いでるだろうから実質農家だよな',
+--   3
+-- ),(
+--   '子供の頃プールで「いきなり入ると心臓がビックリしちゃうから少しずつ水を体にかけていって、ゆっくり入るように」と教育されたので、連休終わっていきなり仕事や勉強すると心臓がビックリしちゃうからしばらくは会社や学校に着いたらすぐ帰るようにした方がいいと思う。心臓がビックリしちゃうから。',
+--   3
+-- )
+-- ;
