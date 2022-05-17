@@ -1,6 +1,6 @@
 # 注意
 
-Windowsの方は最初に下記のコマンドを実行してください。
+Windowsの方は最初にルートディレクトリで、下記のコマンドを実行してください。
 
 ``` sh
 chmod 444 docker/mysql/my.cnf
